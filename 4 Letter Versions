@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.fourColumns{
+			display: inline-block;
+			}
+		
+			.stroke-horizontal{
+
+			}
+		</style>
+		
+	</head>
+
+	<body>
+		<div class= "fourColumns"></div>
+		<div class= "fourColumns"></div>
+		<div class= "fourColumns"></div>
+		<div class= "fourColumns"></div>
+
+	</body>
+
+</html>
