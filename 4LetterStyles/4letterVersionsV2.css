@@ -1,0 +1,282 @@
+body{
+	margin: auto;
+	width: 100vw;
+	height: 100vh;
+	-webkit-animation: smoothColors 5s linear infinite alternate-reverse;
+	overflow: hidden;
+}
+
+@-webkit-keyframes smoothColors {
+	from  {background-color: rgb(191, 78, 78);}
+	to {background-color: rgb(191, 130, 78);}
+}
+
+/* Vanilla Letters */
+
+.letterBox{
+	float: center;
+	position: relative;
+	display: inline-block;
+	width: 35vw;
+	height: 35vh;
+	padding: 5vh 5vw; 
+	margin: 2vh 2vw;
+	border: 1px dashed black;
+	border-radius: 3px;
+	transform: scale(1);
+	transition: transform 0.7s;
+}
+
+.letterBox:hover{
+	transform: scale(1.05);
+}
+
+.topStroke{
+	position: absolute;
+	width: 35vw;
+	height: 10%;
+	background-color: black;
+	z-index: 1;
+
+}
+
+.verticalStroke{
+	position: absolute;
+	width: 10%;
+	height: 35vh;
+	background-color: black;
+	z-index: 2;
+}
+
+.midStroke{
+	position: absolute;
+	top: 40%;
+	width: 28vw;
+	height: 10%;
+	background-color: black;
+	z-index: 3;
+}
+
+/*First Letter Animation */
+
+.letterOne{
+	-webkit-animation: smoothColors 5s linear infinite alternate;
+	-webkit-animation-play-state: paused;
+}
+
+.letterOne:hover{
+	-webkit-animation-play-state: running;
+	opacity: 0%;
+
+}
+
+/*
+.letterOneDirections{
+	font-family: 'Dokdo', cursive;
+	font: 20em 'Veranda' sans-serif;
+	color: black;
+	margin: auto;
+	opacity: 100%;
+	transition: opacity 0.1s;
+}
+
+.letterOneDirections:hover{
+	opacity: 0%;
+} */
+	
+/*Second Letter Animation */
+
+.letterTwoH{
+	-webkit-animation:wiggleX 1s ease 0s infinite;
+}
+
+.letterTwoH:hover{
+	-webkit-animation-duration: .02s;
+}
+
+@-webkit-keyframes wiggleX {
+	10%  {transform: scaleX(1);}
+	20%  {transform: scaleX(1.03);}
+	30%  {transform: scaleX(1.09);}
+	40%  {transform: scaleX(1.03);}
+	50%  {transform: scaleX(1.01);}
+	60%  {transform: scaleX(1.03);}
+	70%  {transform: scaleX(1.3);}
+	80%  {transform: scaleX(1.05);}
+	90%  {transform: scaleX(1.01);}
+	100% {transform: scaleX(1.09);}
+}
+
+.letterTwoV{
+	-webkit-animation:wiggleY 1s ease 0s infinite;
+}
+
+.letterTwoV:hover{
+	-webkit-animation-duration: .09s;
+}
+
+@-webkit-keyframes wiggleY {
+	10%  {transform: scaleX(1);}
+	20%  {transform: scaleX(1.03);}
+	30%  {transform: scaleX(1.09);}
+	40%  {transform: scaleX(1.03);}
+	50%  {transform: scaleX(1.01);}
+	60%  {transform: scaleX(1.03);}
+	70%  {transform: scaleX(1.3);}
+	80%  {transform: scaleX(1.05);}
+	90%  {transform: scaleX(1.01);}
+	100% {transform: scaleX(1.09);}
+}
+
+.letterTwoHtwo{
+	-webkit-animation:wiggleXtwo 1s ease 0.2s infinite;
+}
+
+.letterTwoHtwo{
+	-webkit-animation:wiggleXtwo 1s ease 0.2s infinite;
+}
+
+.letterTwoHtwo:hover{
+	-webkit-animation-duration: 0.5s;
+}
+
+@-webkit-keyframes wiggleXtwo {
+	10%  {transform: scaleX(1);}
+	20%  {transform: scaleX(1.03);}
+	30%  {transform: scaleX(1.09);}
+	40%  {transform: scaleX(1.03);}
+	50%  {transform: scaleX(1.01);}
+	60%  {transform: scaleX(1.03);}
+	70%  {transform: scaleX(1.3);}
+	80%  {transform: scaleX(1.05);}
+	90%  {transform: scaleX(1.01);}
+	100% {transform: scaleX(1.09);}
+}
+
+
+/*Third Letter Animation */
+
+.letterThree{
+
+
+}
+
+.letterThree:hover{
+	-webkit-animation: popRotate 1s ease 0s normal;
+}
+
+
+@-webkit-keyframes popRotate {
+	0%   {transform: rotate(0deg) scale(1);
+	}
+
+	10%   {transform: rotate(-10deg)
+			scale(0.9);
+	}
+
+	80%   {transform: rotate(375deg) 
+			scale(1.5);
+	}
+
+	90%   {transform: rotate(358deg)
+			scale(0.9);
+	}
+
+	100% {transform: rotate(360deg) 
+			scale(1.05);
+	}
+}
+
+/*Fourth Letter Animation */
+
+
+/*Fourth Letter Spine */
+
+.letterFour{
+	margin-top: 55px;
+	-webkit-animation-play-state: paused;
+}
+
+.letterFour:hover{
+	-webkit-animation-play-state: running;
+}
+
+.letterFourVert{
+	-webkit-animation: bounce 0.9s ease 0s infinite normal;
+}
+
+/*Fourth Letter Top Stroke */
+
+
+.letterFourTop{
+	-webkit-animation: bounceRotate 0.9s ease 0.16s infinite normal;
+}
+
+/*Fourth Letter Mid Stroke */
+
+.letterFourMid{
+	-webkit-animation: bounceRotate 0.9s ease 0.08s infinite normal;
+}
+
+
+@-webkit-keyframes bounce {
+	0% {transform: translateY(0px)
+		scaleY(0.9)
+		scaleX(1.1)
+			;
+	}
+
+	20% {transform: translateY(-45px)
+		scaleX(0.9);
+	}
+
+	50% {transform: translateY(-50px)
+		scaleY(1.01)
+		scaleX(0.9);
+	}
+
+	80% {transform: translateY(-45px)
+		scaleY(1.015)
+		scaleX(0.87);
+	}
+
+	100% {transform: translateY(0vh)
+		scaleY(0.9) 
+		scaleX(1.1)
+			;
+	}
+}
+
+@-webkit-keyframes bounceRotate {
+	0% {transform: translateY(0px)
+		scaleY(0.9)
+		scaleX(1.1)
+		rotate(19deg)
+			;
+	}
+
+	20% {transform: translateY(-70px)
+		scaleX(0.9)
+		rotate(-6deg)
+		;
+	}
+
+	50% {transform: translateY(-75px)
+		scaleY(1.01)
+		scaleX(0.9)
+		rotate(-10deg)
+		;
+	}
+
+	80% {transform: translateY(-70px)
+		scaleY(1.015)
+		scaleX(0.87)
+		rotate(-12deg);
+	}
+
+	100% {transform: translateY(0vh)
+		scaleY(0.9) 
+		scaleX(1.1)
+			;
+	}
+}
