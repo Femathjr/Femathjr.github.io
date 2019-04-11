@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!-- <meta http-equiv="X-UA-Compatible" content="" -->
+
+	<link 
+    	href= "Exercise_7_Sentence_Generator.css" 
+    	rel= "stylesheet">
+
+    <script src="myscripts.js"></script>
+
+</head>
+
+<body>
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+		var noun1 = ["a", "e", "i", "o", "u"];
+		var adjective1 = ["e", "g", "b", "d", "f"];
+		var noun2 = ["1", "2", "3", "4", "5"];
+
+		function pickRandomWord(x){
+			y = x[Math.floor(Math.random()*x.length)];
+			return y;
+		}
+
+		function printRandomWord(x){
+			y = x[Math.floor(Math.random())]
+		}
+
+
+
+	<p>
+		<span id="noun1"></span> is <span id="adjective1"></span>er than <span id="noun2"></span>
+	</p>
+
+	<script>
+		
+		
+		document.getElementById('noun1').innerHTML = X;
+		document.getElementById('adjective1').innerHTML = Y;
+		document.getElementById('noun2').innerHTML = Z;
+	</script>
+
+	
+
+
+</body>
+
+</html>
