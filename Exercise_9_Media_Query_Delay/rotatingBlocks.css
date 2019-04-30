@@ -1,0 +1,92 @@
+.rotationBody1{
+	z-index: 1;
+	-webkit-animation-name: rotation;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-timing-function: cubic-bezier(.14,0,0,.99);
+	-webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: reverse;
+}
+
+.rotationBody2{
+	z-index: 2;
+	-webkit-animation-name: rotation;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-timing-function: cubic-bezier(.14,0,0,.99);
+	-webkit-animation-delay: 2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: reverse;
+}
+
+
+.rotationBody3{
+	z-index: 3;
+	-webkit-animation-name: rotation;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-timing-function: cubic-bezier(.14,0,0,.99);
+	-webkit-animation-delay: 4s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: reverse;
+}
+
+.rotationBody4{
+	z-index: 4;
+	-webkit-animation-name: rotation;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-timing-function: cubic-bezier(.14,0,0,.99);
+	-webkit-animation-delay: 6s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: reverse;
+}
+
+.rotationBody5{
+	z-index: 5;
+	-webkit-animation-name: rotation;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-timing-function: cubic-bezier(.14,0,0,.99);
+	-webkit-animation-delay: 8s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: reverse;
+}
+
+
+.rotation1{
+	-webkit-animation-name: rotation;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: cubic-bezier(.14,0,0,.99);
+	-webkit-animation-delay: 0.5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: linear;
+}
+
+@-webkit-keyframes rotation{
+	from {-webkit-transform: rotate(0deg);}
+	to {-webkit-transform: rotate(360deg);}
+}
+
+
+.block1{
+	margin: 10vw 10vh;
+	float: left;
+	width: 20vw;
+	height: 1vh;
+	background-color: #FF7F50;
+}
+
+
+.block2{
+	margin: 10vw 10vh;
+	float: right;
+	width: 50vw;
+	height: 1vh;
+	background-color: #FF7F50;
+}
+
+.blockGroup{
+	position: absolute;
+}
+
+body{
+	width:;
+	background-color: #D2691E;
+}

@@ -1,0 +1,111 @@
+body{
+	-webkit-animation: backColorChange 10s linear 0s infinite alternate;
+}
+
+@keyframes backColorChange{
+	from {background-color: #ffffcc;}
+	to {background-color: #ccccff;}
+}
+
+.dudeBox{
+	margin: auto;
+	float: center;
+	top: 5vh;
+	position: relative;
+	background-color: white;
+	height: 80vh;
+	width: 80vw;
+	border: 5px solid black;
+}
+
+
+.dudeBody{
+	margin: auto;
+	float: center;
+	top: 50%;
+	position: relative;
+	background-color: #66ff66;
+	height: 40px;
+	width: 60px;
+	border: 2px solid #33cc33;
+	-webkit-animation: bouncyBoi 0.7s linear 2s infinite alternate;
+}
+
+.dudeLeftArm{
+	margin: auto;
+	float: center;
+	top: 40%;
+	right: 10%;
+	position: relative;
+	background-color: #66ff66;
+	height: 20px;
+	width: 35px;
+	border: 2px solid #33cc33;
+	-webkit-animation: bouncyBoi 0.7s linear 2.07s infinite alternate;
+}
+
+.dudeRightArm{
+	margin: auto;
+	float: center;
+	top: 40%;
+	right: -10%;
+	position: relative;
+	background-color: #66ff66;
+	height: 20px;
+	width: 35px;
+	border: 2px solid #33cc33;
+	-webkit-animation: bouncyBoi 0.7s linear 2.13s infinite alternate;
+}
+
+.dudeLeftLeg{
+	margin: auto;
+	float: center;
+	top: 40%;
+	right: 12%;
+	position: relative;
+	background-color: #66ff66;
+	height: 20px;
+	width: 35px;
+	border: 2px solid #33cc33;
+	-webkit-animation: bouncyBoi 0.7s linear 2.1s infinite alternate;
+}
+
+.dudeRightLeg{
+	margin: auto;
+	float: center;
+	top: 40%;
+	right: -12%;
+	position: relative;
+	background-color: #66ff66;
+	height: 20px;
+	width: 35px;
+	border: 2px solid #33cc33;
+	-webkit-animation: bouncyBoi 0.7s linear 2.08s infinite alternate;
+}
+
+@-webkit-keyframes bouncyBoi{
+	0% {transform: translateY(0px)
+		scaleY(0.9)
+		scaleX(1.1);
+		}
+
+	20% {transform: translateY(-45px)
+		scaleX(0.9);
+	}
+
+	50% {transform: translateY(-50px)
+		scaleY(1.01)
+		scaleX(0.9);
+	}
+
+	80% {transform: translateY(-45px)
+		scaleY(1.015)
+		scaleX(0.87);
+	}
+
+	100% {transform: translateY(0vh)
+		scaleY(0.9) 
+		scaleX(1.1);
+	}
+}
+

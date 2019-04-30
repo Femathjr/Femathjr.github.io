@@ -1,0 +1,1119 @@
+/* This is the responsive size */
+
+@media screen and (min-width: 1px) and (max-width: 1000px) { 
+	body {
+		position: relative;
+		z-index: 0;
+		background-color: #FFEC8F;
+		overflow: hidden;
+		max-width: 1000px;
+		margin: 0px auto;
+	}
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1000000px) { 
+	body {
+		position: relative;
+		z-index: 0;
+		overflow: hidden;
+		margin: 0px auto;
+	}
+}
+
+/*This is tbe body color*/
+
+/* page 1 */
+.eighty-eight{
+	background-color: #FFEC8F;
+}
+
+/* page 2 */
+.ninety-eight{
+	-webkit-animation: animEightyToNinety 4s ease 0.5s 1;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animEightyToNinety{
+	from {background-color: #FFEC8F;}
+	to {background-color: #FFE18F;}
+}
+
+/* page 3 */
+.two-thousand-eight{
+	-webkit-animation: animNinetyToTwoThousand 4s ease 0.5s 1;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animNinetyToTwoThousand{
+	from {background-color: #FFE18F;}
+	to {background-color: #FFCE8F;}
+}
+
+/* page 4 */
+.two-thousand-eighteen{
+	animation: animTwoThousandToTwentyEighteen 4s ease 0.5s 1 ;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animTwoThousandToTwentyEighteen{
+	from {background-color: #FFE98F;}
+	to {background-color: #8FFFFB;}
+}
+
+/* page 5 */
+.two-thousand-nineteen{
+	animation: animTwentyEighteenToPresent 4s ease 0.5s 1 ;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animTwentyEighteenToPresent{
+	0% {background-color: #FFE98F;}
+	20% {background-color: #FFA58F;}
+	80% {background-color: #FFA58F;}
+	100% {background-color: #8FFFFB;}
+}
+
+/* These Are the psd layers on which Everything sits*/
+
+/*
+.background{
+	z-index: 0
+}
+
+.layer1{
+	z-index: 1
+}
+
+.layer2{
+	z-index: 2
+}
+
+.layer3{
+	z-index: 3
+}
+
+.foreground{
+	z-index: 100
+}
+
+*/
+
+/* this is the timeline*/
+
+
+.timeline{
+	width: 80vw; 
+	height: 2px;
+	margin: auto;
+	right: 50vw;
+	margin: 0px 0px 20px 0px;
+	background-color: #5555;
+	display: block;
+}
+
+h2{
+	font:bold 0.875em 'Proza Libre', sans-serif;
+	font-variant: small-caps;
+	opacity: 0;
+	text-align: center;
+}
+
+.timelineNode{
+	float: right;
+	margin-right: 
+}
+
+
+/* This is the basic text organization */
+
+/* fading in text begins at opacity: 0; */
+
+h1 {
+	font:bold 1.875em 'Proza Libre', sans-serif;
+	font-variant: small-caps;
+	opacity: 0;
+	text-align: center;
+}
+
+
+.headerBox{
+	position: absolute;
+	width: 96vw;
+	background-color: inherit;
+	padding: 16px 2vw;
+	margin: inherit;
+	z-index: 100;
+}
+
+.contentWrapper{
+	background-color: white;
+	padding: 10vh 2vw;
+	margin: inherit;
+	max-width: 1000px
+}
+
+p {
+	font:0.875em 'Proza Libre', sans-serif;
+	opacity: 0;
+	margin-top: 10vh;
+}
+
+p::first-letter{
+	font:1.2em 'Proza Libre', sans-serif;
+	color: inherit;
+}
+
+.backToStart{
+	font:0.3em 'Proza Libre', sans-serif;
+	opacity: 0;
+	float: right;
+}
+
+}
+
+.finalCenteredLine{
+	margin-top: 0vh;
+	text-align: center;
+}
+
+.footerBox{
+	background-color: inherit;
+	overflow: hidden;
+}
+
+/*these are image types */
+
+img {
+    width:100%;
+    min-width: 1000px;
+	height:auto;
+    overflow: hidden;
+
+}
+
+.foregroundImg{
+	opacity: 0.5;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	z-index: 1;
+}
+
+.backgroundImg{
+	opacity: 0.2;
+	width: 150%;
+	height: auto;
+	position: absolute;
+	z-index: -1;
+	left: 0px;
+	top: 0px;	
+} 
+
+.closeUpImg{
+	opacity: 0.9;
+	width: 500%;
+	height: auto;
+	position: absolute;
+	z-index: 2;
+	left: 0px;
+	top: 0px;	
+} 
+
+
+/* -------------------------------------
+
+This is the animation station!
+
+Make sure you add animation delay to new stuff that uses it!
+----------------------------------------
+*/
+
+/* this fades in the page content*/
+
+.fadeAnimation{
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-timing-function: cubic-bezier(.14,0,0,.99);
+	-webkit-animation-delay: 1s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+/*------------------------------------------*/
+
+/*animation page 1987*/
+
+.slidingAnimation1{
+	-webkit-animation-name: slideOne;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: cubic-bezier(.14,0,0,.99);
+	-webkit-animation-delay: 0.5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slideOne{
+	from {-webkit-transform: translateY(100vh);
+		opacity: 0;}
+	to {-webkit-transform: translateY(40vh);
+		opacity: 0.5;}
+}
+
+
+/*animation page 1997*/
+
+.slidingAnimation2{
+	-webkit-animation-name: slideTwo;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: cubic-bezier(.14,0,0,.99);
+	-webkit-animation-delay: 0.5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slideTwo{
+	from {-webkit-transform: translateY(40vh);
+		opacity: 0;}
+	to {-webkit-transform: translateY(32vh);
+		opacity: 0.5;}
+}
+
+.slidingBackgroundAnimation2{
+	-webkit-animation-name: slideB;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-timing-function: cubic-bezier(.14,0,0,.99);
+	-webkit-animation-delay: 1s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slideB{
+	from {-webkit-transform: translateY(100vh) scaleX(-1);
+		opacity: 0;
+	}
+	to {-webkit-transform: translateY(57vh) scaleX(-1);
+		opacity: 0.2;
+	}
+}
+
+
+
+/*animation page 2007*/
+
+.slidingAnimation3{
+	-webkit-animation-name: slideThree;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: cubic-bezier(.14,0,0,.99);
+	-webkit-animation-delay: 0.5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slideThree{
+	from {-webkit-transform: translateY(32vh);
+		opacity: 0;}
+	to {-webkit-transform: translateY(17vh);
+		opacity: 0.5;}
+}
+
+.slidingBackgroundAnimation3{
+	-webkit-animation-name: slideBThree;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-timing-function: cubic-bezier(.14,0,0,.99);
+	-webkit-animation-delay: 1s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slideBThree{
+	from {-webkit-transform: translateY(57vh) scaleX(-1);
+		opacity: 0;
+	}
+	to {-webkit-transform: translateY(35vh) scaleX(-1);
+		opacity: 0.2;
+	}
+}
+
+
+.slidingForegroundAnimation3{
+	-webkit-animation-name: slideCThree;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-timing-function: cubic-bezier(.14,0,0,.99);
+	-webkit-animation-delay: 1s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+
+@media screen and (min-width: 1px) and (max-width: 1000px) { 
+
+	@-webkit-keyframes slideCThree{
+		from {-webkit-transform: translateY(100vh) scaleX(-1);
+			opacity: 0;
+		}
+		to {-webkit-transform: translateY(50vh) scaleX(-1);
+			opacity: 1;
+		}
+	}
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1000000px) { 
+	@-webkit-keyframes slideCThree{
+		from {-webkit-transform: translateY(100vh) scaleX(-1);
+			opacity: 0;
+		}
+		to {-webkit-transform: translateY(5vh) scaleX(-1);
+			opacity: 1;
+		}
+	}
+}
+
+
+
+/*animation page 2017*/
+
+.slidingAnimation4{
+	-webkit-animation-name: slideFour;
+	-webkit-animation-duration: 300s;
+	-webkit-animation-timing-function: cubic-bezier(.14,0,0,.99);
+	-webkit-animation-delay: 0.5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-play-state: running;
+}
+
+.slidingAnimation4:hover{
+		-webkit-animation-play-state: paused;
+	}
+
+@-webkit-keyframes slideFour{
+	0% {-webkit-transform: translateY(17vh);
+		opacity: 0;}
+	2% {-webkit-transform: translateY(10vh);
+		opacity: 0.5;}
+	100%{-webkit-transform: translateY(-20vh);
+		opacity: 0.5;}
+}
+
+.slidingBackgroundAnimation4{
+	-webkit-animation-name: slideBFour;
+	-webkit-animation-duration: 350s;
+	-webkit-animation-timing-function: cubic-bezier(.14,0,0,.99);
+	-webkit-animation-delay: 1s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-play-state: running;
+}
+
+.slidingBackgroundAnimation4:hover{
+	-webkit-animation-play-state: paused;
+	}
+
+
+@-webkit-keyframes slideBFour{
+	0% {-webkit-transform: translateY(35vh) scaleX(-1);
+		opacity: 0;}
+	2% {-webkit-transform: translateY(30vh) scaleX(-1);
+		opacity: 0.5;}
+	100%{-webkit-transform: translateY(-50vh) scaleX(-1);
+		opacity: 0.5;}
+}
+
+
+.slidingForegroundAnimation4{
+	-webkit-animation-name: slideCFour;
+	-webkit-animation-duration: 200s;
+	-webkit-animation-timing-function: cubic-bezier(.14,0,0,.99);
+	-webkit-animation-delay: 1s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-play-state: running;
+}
+
+.slidingForegroundAnimation4:hover{
+	-webkit-animation-play-state: paused;
+	}
+
+
+@media screen and (min-width: 1px) and (max-width: 1000px) { 
+
+	@-webkit-keyframes slideCFour{
+		0% {-webkit-transform: translateY(50vh);
+		opacity: 0;}
+		2% {-webkit-transform: translateY(45vh);
+			opacity: 1;}
+		100%{-webkit-transform: translateY(-50vh);
+			opacity: 0.3;}
+		}
+	}
+
+@media screen and (min-width: 1000px) and (max-width: 1000000px) { 
+	@-webkit-keyframes slideCFour{
+		0% {-webkit-transform: translateY(5vh);
+		opacity: 0;}
+		2% {-webkit-transform: translateY(2vh);
+			opacity: 1;}
+		100%{-webkit-transform: translateY(-50vh);
+			opacity: 0.3;}
+	}
+}
+
+/*
+
+.slidingAnimation4{
+	-webkit-animation-name: slideFour;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: cubic-bezier(.14,0,0,.99);
+	-webkit-animation-delay: 0.5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slideFour{
+	from {-webkit-transform: translateY(80vh);
+		opacity: 0;}
+	to {-webkit-transform: translateY(90vh)
+		opacity: inherit;}
+}
+
+.slidingBackgroundAnimation4{
+	-webkit-animation-name: slideBFour;
+	-webkit-animation-duration: 200s;
+	-webkit-animation-timing-function: cubic-bezier(.14,0,0,.99);
+	-webkit-animation-delay: 1s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slideBFour{
+	0% {-webkit-transform: translateY(20vh) scaleX(-1);
+	}
+	to {-webkit-transform: translateY(5vh) scaleX(-1);
+	}
+}
+
+.inactionCreep{
+	-webkit-transition: inactionCreep;
+	-webkit-transition-duration: 200s;
+	-webkit-transition-timing-function: ease;
+	-webkit-transition-delay: 5s;
+	-webkit-transform: translateY(0vh);
+}
+
+/*
+@-webkit-keyframes inactionCreep{
+	from {-webkit-transform: translateY(0vh);
+	}
+	to {-webkit-transform: translateY(-50vh);
+	}
+}
+
+
+
+.inactionCreep:hover{
+	animation-timing-function: reverse;
+}
+
+.actionfall{
+	
+	/* Animates only on hover ***
+}
+
+.actionFall:hover{
+	opacity: 1;
+	-webkit-animation-name: actionFall;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes actionFall{
+	from {-webkit-transform: inherit;
+	}
+	to {-webkit-transform: translateY(10vh);
+	}
+}
+
+*/
+
+
+/* Animation page 2019+ */
+
+.idSakaiFall{
+	position: absolute;
+	left: 0px;
+	top: 0px;	
+	opacity: 1;
+	-webkit-animation-name: idSakaiFall;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes idSakaiFall{
+	0% {-webkit-transform: inherit;
+	}
+	10% {-webkit-transform: translateY(-50vh);
+	}
+	100% {-webkit-transform: translateY(200vh)}
+}
+
+/* this is the big animation on the end page */
+
+.idionellaSakaiensis{
+
+}
+
+/* these are the little equalizer bugs*/
+
+.eatingBugsBackground{
+	position: relative;
+	width: 200%;
+	background-color: inherit;
+}
+
+
+.eatingBugs{
+	height: 50px;
+	width: 100px;
+	padding-left: 1vw;
+	padding-bottom: 100vh;
+	padding-right: 1vw;
+	transform: translateY(-500px);
+	-webkit-animation-name: equalize;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: forwards;
+	-webkit-animation-fill-mode: forwards;
+
+
+}
+
+@keyframes equalize{
+  0% {
+    padding-top: 2vh;
+  }
+  4% {
+    padding-top: 1vh;
+  }
+  8% {
+    padding-top: 3vh;
+  }
+  12% {
+    padding-top: 5vh;
+  }
+  16% {
+    padding-top: 0vh;
+  }
+  20% {
+    padding-top: 7vh;
+  }
+  24% {
+    padding-top: 1vh;
+  }
+  28% {
+    padding-top: 3vh;
+  }
+  32% {
+    padding-top: 9vh;
+  }
+  36% {
+    padding-top: 5vh;
+  }
+  40% {
+    padding-top: 8vh;
+  }
+  44% {
+    padding-top: 6vh;
+  }
+  48% {
+    padding-top: 4vh;
+  }
+  52% {
+    padding-top: 0vh;
+  }
+  56% {
+    padding-top: 1vh;
+  }
+  60% {
+    padding-top: 7vh;
+  }
+  64% {
+    padding-top: 3vh;
+  }
+  68% {
+    padding-top: 9vh;
+  }
+  72% {
+    padding-top: 2vh;
+  }
+  76% {
+    padding-top: 5vh;
+  }
+  80% {
+    padding-top: 6vh;
+  }
+  84% {
+    padding-top: 4vh;
+  }
+  88% {
+    padding-top: 8vh;
+  }
+  92% {
+    padding-top: 3vh;
+  }
+  96% {
+    padding-top: 4vh;
+  }
+  100% {
+    padding-top: 2vh;
+  }
+}
+
+
+.eatingBugs2{
+	height: 50px;
+	width: 100px;
+	padding-left: 1vw;
+	padding-bottom: 100vh;
+	padding-right: 1vw;
+	transform: translateY(-500px);
+	-webkit-animation-name: equalizeTwo;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: reverse;
+	-webkit-animation-fill-mode: forwards;
+
+
+}
+
+@keyframes equalizeTwo{
+  0% {
+    padding-top: 4vh;
+  }
+  4% {
+    padding-top: 2vh;
+  }
+  8% {
+    padding-top: 8vh;
+  }
+  12% {
+    padding-top: 1vh;
+  }
+  16% {
+    padding-top: 3vh;
+  }
+  20% {
+    padding-top: 6vh;
+  }
+  24% {
+    padding-top: 9vh;
+  }
+  28% {
+    padding-top: 5vh;
+  }
+  32% {
+    padding-top: 7vh;
+  }
+  36% {
+    padding-top: 9vh;
+  }
+  40% {
+    padding-top: 6vh;
+  }
+  44% {
+    padding-top: 4vh;
+  }
+  48% {
+    padding-top: 2vh;
+  }
+  52% {
+    padding-top: 0vh;
+  }
+  56% {
+    padding-top: 8vh;
+  }
+  60% {
+    padding-top: 3vh;
+  }
+  64% {
+    padding-top: 5vh;
+  }
+  68% {
+    padding-top: 7vh;
+  }
+  72% {
+    padding-top: 1vh;
+  }
+  76% {
+    padding-top: 5vh;
+  }
+  80% {
+    padding-top: 4vh;
+  }
+  84% {
+    padding-top: 5vh;
+  }
+  88% {
+    padding-top: 2vh;
+  }
+  92% {
+    padding-top: 3vh;
+  }
+  96% {
+    padding-top: 8vh;
+  }
+  100% {
+    padding-top: 7vh;
+  }
+}
+
+
+.eatingBugs3{
+	height: 50px;
+	width: 100px;
+	padding-left: 1vw;
+	padding-bottom: 100vh;
+	padding-right: 1vw;
+	transform: translateY(-500px);
+	-webkit-animation-name: equalizeThree;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: normal;
+	-webkit-animation-fill-mode: forwards;
+
+
+}
+
+@keyframes equalizeThree{
+  0% {
+    padding-top: 0vh;
+  }
+  4% {
+    padding-top: 4vh;
+  }
+  8% {
+    padding-top: 5vh;
+  }
+  12% {
+    padding-top: 2vh;
+  }
+  16% {
+    padding-top: 3vh;
+  }
+  20% {
+    padding-top: 8vh;
+  }
+  24% {
+    padding-top: 7vh;
+  }
+  28% {
+    padding-top: 9vh;
+  }
+  32% {
+    padding-top: 1vh;
+  }
+  36% {
+    padding-top: 6vh;
+  }
+  40% {
+    padding-top: 0vh;
+  }
+  44% {
+    padding-top: 2vh;
+  }
+  48% {
+    padding-top: 8vh;
+  }
+  52% {
+    padding-top: 7vh;
+  }
+  56% {
+    padding-top: 4vh;
+  }
+  60% {
+    padding-top: 1vh;
+  }
+  64% {
+    padding-top: 9vh;
+  }
+  68% {
+    padding-top: 3vh;
+  }
+  72% {
+    padding-top: 6vh;
+  }
+  76% {
+    padding-top: 5vh;
+  }
+  80% {
+    padding-top: 4vh;
+  }
+  84% {
+    padding-top: 2vh;
+  }
+  88% {
+    padding-top: 5vh;
+  }
+  92% {
+    padding-top: 4vh;
+  }
+  96% {
+    padding-top: 2vh;
+  }
+  100% {
+    padding-top: 3vh;
+  }
+}
+
+.eatingBugs4{
+	height: 50px;
+	width: 100px;
+	padding-left: 1vw;
+	padding-bottom: 100vh;
+	padding-right: 1vw;
+	transform: translateY(-500px);
+	-webkit-animation-name: equalizeFour;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: normal;
+	-webkit-animation-fill-mode: forwards;
+
+
+}
+
+@keyframes equalizeFour{
+  0% {
+    padding-top: 5vh;
+  }
+  4% {
+    padding-top: 4vh;
+  }
+  8% {
+    padding-top: 5vh;
+  }
+  12% {
+    padding-top: 8vh;
+  }
+  16% {
+    padding-top: 7vh;
+  }
+  20% {
+    padding-top: 3vh;
+  }
+  24% {
+    padding-top: 4vh;
+  }
+  28% {
+    padding-top: 2vh;
+  }
+  32% {
+    padding-top: 1vh;
+  }
+  36% {
+    padding-top: 9vh;
+  }
+  40% {
+    padding-top: 6vh;
+  }
+  44% {
+    padding-top: 4vh;
+  }
+  48% {
+    padding-top: 6vh;
+  }
+  52% {
+    padding-top: 3vh;
+  }
+  56% {
+    padding-top: 8vh;
+  }
+  60% {
+    padding-top: 7vh;
+  }
+  64% {
+    padding-top: 9vh;
+  }
+  68% {
+    padding-top: 4vh;
+  }
+  72% {
+    padding-top: 1vh;
+  }
+  76% {
+    padding-top: 2vh;
+  }
+  80% {
+    padding-top: 5vh;
+  }
+  84% {
+    padding-top: 6vh;
+  }
+  88% {
+    padding-top: 8vh;
+  }
+  92% {
+    padding-top: 1vh;
+  }
+  96% {
+    padding-top: 3vh;
+  }
+  100% {
+    padding-top: 2vh;
+  }
+}
+
+
+.halfCircle {
+     /* as the half of the width */
+    background-color: #8efefa;
+    border-top-left-radius: 200px;  /* 100px of height + 10px of border */
+    border-bottom-left-radius: 200px; /* 100px of height + 10px of border */
+    border-bottom: 0;
+}
+
+.halfCircleMiddle {
+    border-bottom: 0;
+}
+
+.halfCircleRight {
+    border-top-right-radius: 200px;  /* 100px of height + 10px of border */
+    border-bottom-right-radius: 200px; /* 100px of height + 10px of border */
+    border-bottom: 0;
+}
+
+
+.halfCircleCommonalities{
+	text-align: center;
+	color: rgba(0, 0, 0, 0);
+	background-color: #8efefa;
+	width: 15vw;
+	max-width: 70px;
+	padding: 50px 0px;
+	margin: 10px;
+
+	transition: 0.7s;
+}
+
+.halfCircleCommonalities:hover{
+	color: black;
+	width: auto;
+    padding: 50px 50px;
+
+}
+
+.halfCircleCentering{
+/*	position: relative;
+	top: 20%;
+	left: 50%;
+	margin: auto; */
+	margin-top: 0vh;
+	display: flex;
+	justify-content: center;
+}
+
+
+.bacteriaAnimation1{
+	animation: bacteriaAnimation 1.5s ease-in-out 1s infinite forwards;
+}
+
+@keyframes bacteriaAnimation{
+		0% {
+			transform: translateX(5px);
+		}
+
+		50% {
+			transform: translateX(-5px);
+		}
+
+		100% {
+			transform: translateX(0px);
+		}
+
+	}
+
+
+/*
+	Bibliography
+
+	Burkholder, Mandy. “Half of Britain's Plastic Bottles End up in Landfills.” OutwardOn.com, 29 Nov. 2016, www.outwardon.com/article/half-of-britains-plastic-bottles-end-up-in-landfills/.	
+	Day, Robert H., et al. “The Quantitative Distribution and Characteristics of Neuston Plastic in the North Pacific Ocean, 1985-88 .” NOAA, National Oceanic and Atmospheric Administration, swfsc.noaa.gov/publications/TM/SWFSC/NOAA-TM-NMFS-SWFSC-154_P247.PDF.
+	Freedman, Andrew. “The Great Pacific Garbage Patch Is up to 16 Times More Massive than Thought.” Mashable, Mashable, 22 Mar. 2018, mashable.com/2018/03/22/great-pacific-garbage-patch-growing-exponentially-larger/.
+	Irfan, Umair. “The Race to Save the Planet from Plastic.” Vox, Vox, 16 Apr. 2019, www.vox.com/the-highlight/2019/4/9/18274131/plastic-waste-pollution-bacteria-digestion.
+
+*/
+
+/* this is the code used for the arrow
+
+found at https://codepen.io/saeedalipoor/pen/NPyeog?editors=1100
+
+*/
+
+.arrow {
+	position: relative;
+	z-index: 500;
+	width: 0;
+	height: 0; 
+	border-bottom: 17px solid transparent;  /* left arrow slant */
+	border-top: 17px solid transparent; /* right arrow slant */
+	border-left: 17px solid #2f2f2f; /* bottom, add background color here */
+	font-size: 0;
+	line-height: 0;
+	float: right;
+	opacity: 1;
+}
+
+.arrow:hover {
+	opacity: 0.5;
+	transition:  0.5s ease;
+}
+
+.backArrow {
+	position: relative;
+	z-index: 500;
+	width: 0;
+	height: 0; 
+	border-bottom: 17px solid transparent;  /* left arrow slant */
+	border-top: 17px solid transparent; /* right arrow slant */
+	border-right: 17px solid #2f2f2f; /* bottom, add background color here */
+	font-size: 0;
+	line-height: 0;
+	float: left;
+	opacity: 1;
+}
+
+.backArrow2:hover {
+	opacity: 0.5;
+	transition:  0.5s ease;
+}
