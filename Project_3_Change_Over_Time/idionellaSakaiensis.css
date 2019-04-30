@@ -2,6 +2,7 @@
 
 @media screen and (min-width: 1px) and (max-width: 1000px) { 
 	body {
+		opacity: 0;
 		position: relative;
 		z-index: 0;
 		background-color: #FFEC8F;
@@ -13,6 +14,7 @@
 
 @media screen and (min-width: 1000px) and (max-width: 1000000px) { 
 	body {
+		opacity: 0;
 		position: relative;
 		z-index: 0;
 		overflow: hidden;
@@ -29,35 +31,35 @@
 
 /* page 2 */
 .ninety-eight{
-	-webkit-animation: animEightyToNinety 4s ease 0.5s 1;
+	-webkit-animation: animEightyToNinety 4s ease-in 0.5s 1;
 	-webkit-animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes animEightyToNinety{
-	from {background-color: #FFEC8F;}
-	to {background-color: #FFE18F;}
+	from {background-color: #FFEC8F; opacity: 0;}
+	to {background-color: #FFE18F; opacity: 1;}
 }
 
 /* page 3 */
 .two-thousand-eight{
-	-webkit-animation: animNinetyToTwoThousand 4s ease 0.5s 1;
+	-webkit-animation: animNinetyToTwoThousand 4s ease-in 0.5s 1;
 	-webkit-animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes animNinetyToTwoThousand{
-	from {background-color: #FFE18F;}
-	to {background-color: #FFCE8F;}
+	from {background-color: #FFE18F; opacity: 0;}
+	to {background-color: #FFCE8F; opacity: 1;}
 }
 
 /* page 4 */
 .two-thousand-eighteen{
-	animation: animTwoThousandToTwentyEighteen 4s ease 0.5s 1 ;
+	animation: animTwoThousandToTwentyEighteen 4s ease-in 0.5s 1 ;
 	-webkit-animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes animTwoThousandToTwentyEighteen{
-	from {background-color: #FFE98F;}
-	to {background-color: #8FFFFB;}
+	from {background-color: #FFE98F; opacity: 0;}
+	to {background-color: #8FFFFB; opacity: 1;}
 }
 
 /* page 5 */
@@ -67,10 +69,10 @@
 }
 
 @-webkit-keyframes animTwentyEighteenToPresent{
-	0% {background-color: #FFE98F;}
-	20% {background-color: #FFA58F;}
-	80% {background-color: #FFA58F;}
-	100% {background-color: #8FFFFB;}
+	0% {background-color: #FFE98F; opacity: 0;}
+	20% {background-color: #FFA58F; opacity: 1;}
+	80% {background-color: #FFA58F; opacity: 1;}
+	100% {background-color: #8FFFFB; opacity: 1;}
 }
 
 /* These Are the psd layers on which Everything sits*/
@@ -101,27 +103,99 @@
 /* this is the timeline*/
 
 
+.timelineBackground{
+	color: inherit;
+	width: 100%;
+	height: 20%;
+	position: fixed;
+	z-index: 101;
+}
+
+
 .timeline{
+	opacity: 0;
 	width: 80vw; 
 	height: 2px;
-	margin: auto;
 	right: 50vw;
-	margin: 0px 0px 20px 0px;
+	margin: 10px 0px 5px 0px;
 	background-color: #5555;
 	display: block;
+	padding: 0;
+
+	position: sticky;
+	z-index: 100;
 }
+
+.timelineAnimation{
+	opacity: 1;
+	width: 80vw; 
+	height: 2px;
+	right: 50vw;
+	margin: 10px 0px 5px 0px;
+	background-color: #5555;
+	display: block;
+	padding: 0;
+
+	position: sticky;
+	z-index: 100;
+
+	-webkit-animation-name: timelineAnimation;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-delay: 5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes timelineAnimation{
+	from {opacity: 1; width: 80vw;}
+	to {opacity: 1; width: 120vw;}
+}
+
+
+
+
 
 h2{
-	font:bold 0.875em 'Proza Libre', sans-serif;
+	color: #2f2f2f;
+	font: bold 0.875em 'Proza Libre', sans-serif;
 	font-variant: small-caps;
-	opacity: 0;
+	opacity: 1;
 	text-align: center;
+	transition: 0.5s;
+
+	position: sticky;
+	z-index: 100;
 }
 
-.timelineNode{
-	float: right;
-	margin-right: 
+h2:hover{
+	opacity: 0.5;
 }
+
+@media screen and (min-width: 1px) and (max-width: 1000px) { 
+	.timelineNode{
+		display: inline;
+		text-align: left;
+		margin: 0px 10vw 0px 1vw;
+
+		position: sticky;
+		z-index: 100;
+	}
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1000000px) { 
+	.timelineNode{
+		display: inline;
+		text-align: left;
+		margin: 0px 15vw 0px 1vw;
+
+		position: sticky;
+		z-index: 100;
+	}
+}
+
+
 
 
 /* This is the basic text organization */
@@ -169,7 +243,6 @@ p::first-letter{
 	float: right;
 }
 
-}
 
 .finalCenteredLine{
 	margin-top: 0vh;
@@ -214,7 +287,7 @@ img {
 	width: 500%;
 	height: auto;
 	position: absolute;
-	z-index: 2;
+	z-index: 3;
 	left: 0px;
 	top: 0px;	
 } 
@@ -597,6 +670,9 @@ Make sure you add animation delay to new stuff that uses it!
 
 
 .eatingBugs{
+	position: relative;
+	z-index: 2;
+
 	height: 50px;
 	width: 100px;
 	padding-left: 1vw;
@@ -697,6 +773,9 @@ Make sure you add animation delay to new stuff that uses it!
 
 
 .eatingBugs2{
+	position: relative;
+	z-index: 2;
+
 	height: 50px;
 	width: 100px;
 	padding-left: 1vw;
@@ -797,6 +876,9 @@ Make sure you add animation delay to new stuff that uses it!
 
 
 .eatingBugs3{
+	position: relative;
+	z-index: 2;
+
 	height: 50px;
 	width: 100px;
 	padding-left: 1vw;
@@ -896,6 +978,9 @@ Make sure you add animation delay to new stuff that uses it!
 }
 
 .eatingBugs4{
+	position: relative;
+	z-index: 2;
+
 	height: 50px;
 	width: 100px;
 	padding-left: 1vw;
